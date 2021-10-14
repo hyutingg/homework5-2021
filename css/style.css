@@ -155,21 +155,21 @@ header{
 }
 
 .method-image{
-  grid-column: 1fr;
+  grid-column: 1 / end;
   max-height: 700px;
   overflow: hidden;
   grid-row: 3 / span 1;
 }
 
 .clients-image{
-  grid-column: 1fr;
+  grid-column: 1 / end;
   max-height: 700px;
   overflow: hidden;
   grid-row: 4 / span 1;
 }
 
 .contact-image{
-  grid-column: 1fr;
+  grid-column: 1 / end;
   max-height: 700px;
   overflow: hidden;
   grid-row: 5 / span 1;
