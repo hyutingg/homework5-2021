@@ -86,7 +86,7 @@ nav a{
 
 /* Requirement 3b code here*/
 .skip a:focus{
-  top: 10px;
+  top: 0px;
 
 }
 
@@ -103,7 +103,7 @@ nav a{
   /* Requirement 5 code here*/
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: repeat(5,auto);
+  grid-template-rows: auto;
   grid-row-gap: 15px;
 
 }
@@ -118,9 +118,10 @@ header{
   height: 400px; /* Parallax effect */
 
   /* YOUR CODE HERE; */
-  grid-column: 1 / end;
+  grid-column: 1 / -1;
   grid-row: 1 / span 1;
   background-image: url("../images/header.jpg");
+  background-repeat: no-repeat;
   
 
 }
@@ -148,28 +149,28 @@ header{
 }
 
 .about-image{
-  grid-column: 1 / end;
+  grid-column: 1 / -1;
   max-height: 700px;
   overflow: hidden;
   grid-row: 2 / span 1;
 }
 
 .method-image{
-  grid-column: 1 / end;
+  grid-column: 1 / -1;
   max-height: 700px;
   overflow: hidden;
   grid-row: 3 / span 1;
 }
 
 .clients-image{
-  grid-column: 1 / end;
+  grid-column: 1 / -1;
   max-height: 700px;
   overflow: hidden;
   grid-row: 4 / span 1;
 }
 
 .contact-image{
-  grid-column: 1 / end;
+  grid-column: 1 / -1;
   max-height: 700px;
   overflow: hidden;
   grid-row: 5 / span 1;
@@ -186,6 +187,7 @@ header{
 
   /* Your code here */
   align-self: center;
+  justify-content: center;
 
 }
 
